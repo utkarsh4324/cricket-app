@@ -1,0 +1,225 @@
+.containerhead {
+    width: 100%;
+    height: auto;
+    background-color: rgba(9, 2, 25, 0.901);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.matchteam {
+    padding-left: 2em;
+    padding-top: 1em;
+}
+
+.matchline2 {
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team1_top,
+.team2_top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.over {
+    padding-top: 10px;
+}
+
+.matchwon_head {
+    font-size: 2em;
+    text-align: center;
+    padding-top: 20px;
+    color: #fb8b24;
+}
+
+
+/* Media queries for responsiveness */
+
+@media (min-width: 768px) {
+    .matchline2 {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .team1_top,
+    .team2_top {
+        margin-bottom: 0;
+    }
+}
+
+.logo_team {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+
+
+/* nav */
+
+.navbar {
+    background-color: #333;
+    /* padding: 5px; */
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    padding-left: 19%;
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar li a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.main_content {
+    /* padding-left: 20%; */
+    /* padding-right: 20%; */
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.scorebtn {
+    margin: 10px;
+    border-radius: 10px;
+}
+
+
+/* table batting */
+
+.scor_bat_table {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+    border: none;
+}
+
+.scor_bat_table th {
+    background-color: #f2f2f2;
+}
+
+.scor_bat_table th,
+.scor_bat_table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    border: none;
+    line-height: 1.5;
+}
+
+.scor_bat_table th:first-child,
+.scor_bat_table td:first-child {
+    text-align: left;
+}
+
+.scor_bat_table tr:nth-child(even) {
+    background-color: #d9f2d9;
+    /* Light green color */
+}
+
+.scor_bat_table tr:nth-child(odd) {
+    background-color: #b3e6b3;
+    /* Dark green color */
+}
+
+
+/* .striped tr:nth-child(even) {
+    /* background-color: #f2f2f2; */
+
+
+/* } */
+
+.yettoplay {
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    margin-left: 25px;
+    margin-right: 10px;
+    /* margin-top: 20px; */
+    padding: 10px;
+    max-height: 100vh;
+    width: fit-content;
+    justify-content: center;
+    /* background-color: #f2f2f2; */
+    border-radius: 10px;
+}
+
+.card_yettoplay {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 15px;
+    /* width: 95%; */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #f2f2f2;
+}
+
+.card h2 {
+    margin: 0;
+}
+
+
+/* Media query for phone view */
+
+@media (max-width: 600px) {
+    .main_content {
+        flex-direction: column;
+        /* Stack items vertically */
+        align-items: center;
+        /* Center items horizontally */
+    }
+    .yettoplay {
+        margin-top: 20px;
+        /* Add some top margin */
+        margin-left: 0;
+        /* Remove left margin */
+        margin-right: 0;
+        /* Remove right margin */
+        width: 90%;
+        /* Adjust width */
+    }
+}
+
+@media (min-width: 601px) {
+    #scoretop {
+        padding-left: 20%;
+        width: 50%;
+    }
+    .matchteam {
+        padding-left: 3em;
+        padding-top: 1.2em;
+    }
+    .team1_top {
+        padding-left: 4em;
+        padding-top: 1.2em;
+    }
+    .team2_top {
+        padding-right: 4em;
+    }
+}
